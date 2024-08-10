@@ -1,28 +1,63 @@
-# TaskYu - Gerenciador de tarefas
+# Páginas de Login e Registro do TaskYu
 
-Este repositório contém o código-fonte e outros recursos relacionados ao projeto TaskYu, um aplicativo web de gestão de tarefas, inicialmente planejado para a prática e estudo da programação em HTML, JavaScript e CSS. Outras linguagens como PHP e SQL serão incluidas conforme o projeto se desenvolve, porém, o planejamente inicial é criar os códigos para as principais páginas usando as linguagens mencionadas anteriormente, e após isso introduzir outros recursos como um banco de dados, serviços do servidor e possivelmente API's.
+Este repositório é destinado ao desenvolvimento web focado na criação das páginas de login e registro para um aplicativo fictício chamado TaskYu. Projeto dedicado ao desenvolvimento front-end, utilizando HTML5, CSS e JavaScript para criar uma experiência de usuário interativa e responsiva, pensado para praticar e aprimorar habilidades de desenvolvimento web.
 
-Neste README terá a descrição e explicação das partes do repositório, além da lista de funcionalidades e requisitos de funcionamente desse sistema, formas de uso, screenshots da interface para uma visualização rápida do design e layout das páginas, instruções de instalação de todas as partes do projeto e contato para dúvidas. 
+## Recursos
 
-## Estrutura do Repositório
+Para a prática de cada linguagem utilizada (CSS, HTML e JavaScript), foram utilizados alguns dos principais recursos para a apresentação das páginas de login e registro de uma forma que fique visualmente agradável e interativa.
 
-Nesta seção, descreveremos como o código-fonte e outros recursos estão organizados dentro deste repositório, fornecendo uma visão geral das diferentes partes do projeto TaskYu.
+- **CSS:**
+    - Posicionamento e tamanho de elementos do Documento HTML.
+    - Seletores, Id's e Classes.
+    - Transições personalizadas.
+    - Animações utilizando KeyFrames.
+    - Media queries para um design responsivo.
 
-### **/TaskYu** - Diretório raiz 
+- **HTML:**
+    - Estruturação de Formulários.
 
-- **LICENSE**: Licença do repositório.
+- **JavaScript:**
+    - Interação com o documento HTML.
+    - Validações de dados.
+    - Expressões regulares (RegExp).
+    - Adição de eventos a elementos do documento HTML.
 
-- **README**: Documentação e explicação do projeto.
+## Estruturação do repositório
 
-- **/src**: Diretório com o código-fonte principal, incluindo os 
-arquivos HTML, CSS e JavaScript das páginas da web.
+- **Raiz:**
+    - Documentos HTML das páginas de login e registro.
+    - Registro das dependências e do projeto e suas versões (`package-lock.json`).
+    - `README.md` e Diretórios listados abaixo.
 
-- **/assets**: Diretório com os elementos utilizados na aplicação, incluindo os ícones.
+- **/assets:**
+    - Ícones.
 
-- **/database**: Diretório com o SQL usado na criação das tabelas, consultas e inserção dos dados de inicialização do projeto, assim como o arquivo .xml dos modelos conceitual e lógico do banco de dados do TaskYu. 
+- **/css:**
+    - Folha de estilo CSS.
 
-### **/database**
+- **/js:**
+    - Arquivos JavaScript:
+        - `validacoes.js` - Funções de validação dos dados inseridos pelo usuário nos formulários.
+        - `criarConta.js` - Aplicação das validações no formulário da página de registro.
+        - `login.js` - Aplicação das validações no formulário da página de login.
 
-- **ModelosBancoDeDadosTaskYu.drawio.xml**: Arquivo XML que contém os diagramas dos modelos lógico e conceitual do banco de dados, usados para representar a estrutura, relacionamentos e características dos dados e tabelas.
+- **README.md:**
+    - Descrição do repositório:
+        - Motivo.
+        - Recursos.
+        - Estruturação do repositório.
+        - Observações.
+        - Contato.
 
-- **/sql**: Diretório que contém todo o SQL usado para criar as tabelas, consultas que serão feitas em determinados processos do sistema e as inserções dos dados de inicialização para o funcionamento correto do programa.
+## Observações
+
+Para este projeto, foram incluídos elementos e funcionalidades básicas para páginas de login e registro. As validações de dados foram implementadas de forma robusta para garantir que o Back-End possa manipular os dados sem erros. Erros de entrada são exibidos de forma clara ao usuário, facilitando a correção das informações para o sucesso no login e registro. Para executar o projeto localmente, clone o repositório e rode o arquivo criarConta.html.
+
+## Contato
+
+Caso tenha dúvidas, entre em contato:
+
+- Nome: Paulo Henrique Barbosa do Prado Pereira
+- E-mail: pereirapaulo436@gmail.com
+- LinkedIn: [Paulo Barbosa](https://www.linkedin.com/in/paulo-barbosa-61a860303/)
+- GitHub: [2007paulohenrique](https://github.com/2007paulohenrique)
