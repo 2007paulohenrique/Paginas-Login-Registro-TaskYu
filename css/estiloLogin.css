@@ -1,0 +1,371 @@
+html, body {
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(to top, rgb(0, 0, 0), #0c1821, rgb(0, 0, 0), #0c1821, rgb(0, 0, 0));
+    background-size: 100% 200%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, Bodoni, "Times New Roman";
+    letter-spacing: 1px;
+    animation: rolar 10s linear infinite;
+}
+
+#taskyu-fundo {
+    position: absolute;
+    z-index: -1;
+    font-size: 19em;
+}
+
+#descricao {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(23, 23, 23);
+    background: linear-gradient(to right, white, #6767c8);
+    border-radius: 3em;
+    text-align: center;
+    margin-left: -5em;
+    padding-left: 5em;
+    width: calc(30% + 5em);
+    height: 80%;
+    min-height: 25em;
+    box-sizing: border-box;
+    z-index: -1;
+    user-select: none;
+    animation: subir 1.5s forwards;
+
+}
+
+#descricao h1 {
+    margin-inline: 1em;
+}
+
+#descricao p {
+    margin: 3em 6em 0;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85%;
+    padding: 0 2em 1em 2em;
+    background-color: #171717;
+    border-radius: 3em;
+    box-sizing: border-box;
+    border: 1px solid black;
+    box-shadow: 10px 0 20px rgb(0, 0, 0);
+    animation: subir 1.5s forwards;
+}
+
+#criar-conta {
+    width: 20em;
+    min-height: 33em;
+}
+
+#login {
+    width: 23em;
+    padding-bottom: 2em;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#coluna1 {
+    height: 45%;
+    width: 100%;
+}
+
+#login #coluna1 {
+    height: 35%;
+}
+
+#coluna2 {
+    gap: 1.5em;
+    height: 24%;
+    width: min-content;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding-inline: 1em;
+    min-height: 3em;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    letter-spacing: 1px;
+}
+
+#criar-conta input,
+#criar-conta #div-senha {
+    height: 23%;
+}
+
+#login input,
+#login #div-senha {
+    height: 30%;
+}
+
+button,
+#entrar-google {
+    padding: 0.5em;
+    border-radius: 10px;
+    width: 8em;
+    height: 3em;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+button {
+    background-color: #252525;
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#entrar-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1em;
+    gap: 1em;
+    box-shadow: 1px 1px 10px black inset;
+    background-color: white;
+    color: black;
+    width: max-content;
+}
+
+#entrar-google:hover {
+    background-color: black;
+    color: white;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 0.7em;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(161, 161, 161);
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+#esqueci-senha {
+    color: red;
+    margin-top: 2em;
+}
+
+#esqueci-senha::before {
+    background-color: red;
+}
+
+#login-titulo {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: auto;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    user-select: none;
+}
+
+#login #login-titulo {
+    margin-bottom: 18vh;
+}
+
+#alertas {
+    position: relative;
+    width: calc(100% - 4em);
+    height: 22%;
+    color: rgb(255, 6, 6);
+    font-size: 0.6em;
+    text-align: justify;
+}
+
+.alerta {
+    top: -1em;
+    position: absolute;
+    visibility: hidden;
+}
+
+#google-icone {
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+#user-icone {
+    position: absolute;
+    height: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4em;
+    border-radius: 50%;
+}
+
+#div-senha {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1em;
+    box-sizing: border-box;
+}
+
+#senha {
+    position: absolute;
+    height: 100% !important;
+    margin-top: 0;
+}
+
+#olho-senha-icone {
+    position: absolute;
+    height: 1.2em;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1em;
+    cursor: pointer;
+}
+
+@media (max-width: 845px), (max-height: 580px) {
+    #descricao {
+        display: none;
+    }
+}
+
+@media (max-width: 495px) {
+    form  {
+        width: 100% !important;
+    }
+}
+
+@media (max-height: 495px) {
+    form {
+        height: 100%;
+    }
+}
+
+@media (max-height: 550px) {
+    #criar-conta,
+    #login {
+        width: 30em;
+        min-height: 29em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #login-titulo {
+        position: absolute;
+        top: 0;
+        margin-top: 1em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .coluna {
+        margin-top: 10em;
+        gap: 2em;
+    }
+
+    #criar-conta #coluna1 {
+        height: 70%;
+        width: 50%;
+        gap: 1em;
+    }
+
+    #login #coluna1 {
+        height: 60%;
+        width: 50%;
+    }
+
+    #coluna2 {
+        height: 40%;
+        margin-left: auto;
+    }
+
+    #criar-conta input,
+    #criar-conta #div-senha {
+        height: 30%;
+    }
+
+    #login input,
+    #login #div-senha {
+        height: 23%;
+    }
+
+    #criar-conta #alertas {
+        margin-top: -1.5em;
+    }
+
+    #login #alertas {
+        margin-top: -3em;
+    }
+
+    a {
+        margin-top: 15%;
+    }
+
+    button, 
+    #entrar-google {
+        min-height: 3em;
+    }
+
+    #user-icone {
+        top: 2.8em;
+    }
+}
+
+@keyframes rolar {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%; 
+    }
+}
+
+@keyframes subir {
+    0% {
+        transform: translateY(120%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
